@@ -1,0 +1,64 @@
+.Onboarding{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pageHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    
+    &__main{
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--color-primary-text-dark);
+
+    }
+    &__sub{
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--color-primary-text-medium);
+    }
+}
+
+
+
+.submitButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    color: var(--color-primary-text-light);
+    background-color: var(--color-primary-buttons);
+    height: 2.5rem;
+    padding: 1rem;
+    max-width:28rem;;
+    border: none;
+    border-radius: .2rem;
+    font-family: 'Inter';
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 24px;
+        background-color: #483d9e;
+        cursor:pointer;
+    }
+}
+
+.form_section{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28rem;
+}
+
+
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+    .pageHeader{
+        &__main{
+            font-size: 1.5rem !important;
+        }
+    }
+}
